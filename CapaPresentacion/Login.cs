@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using CapaNegocio;
+using CapaEntidad;
+
 namespace CapaPresentacion
 {
     public partial class Login : Form
@@ -27,14 +30,28 @@ namespace CapaPresentacion
 
         }
 
-        private void iconButton1_Click(object sender, EventArgs e)
+        private void iconButton1_Click(object sender, EventArgs e)                       
         {
-            Inicio form = new Inicio();
+            List<Usuario> TEST = new CN_Usuario().Listar();
 
-            form.Show();
-            this.Hide();
+            Usuario ousuario = new CN_Usuario().Listar().Where(u => u.Documento == txtdocumento.Text && u.Clave == txtclave.Text).FirstOrDefault();
 
-            form.FormClosing += frm_closing;
+            if (ousuario != null)
+            {
+                Inicio form = new Inicio();
+
+                form.Show();
+                this.Hide();
+
+                form.FormClosing += frm_closing;
+            }
+            else
+            {
+                MessageBox.Show("Usuario o clave incorrecta", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
+
+
         }
 
         private void frm_closing(object sender, FormClosingEventArgs e)

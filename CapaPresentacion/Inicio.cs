@@ -21,5 +21,10 @@ namespace CapaPresentacion
         {
 
         }
+
+        private void Inicio_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

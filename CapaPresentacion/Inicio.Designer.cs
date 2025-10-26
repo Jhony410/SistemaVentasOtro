@@ -200,7 +200,7 @@
             // 
             this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.contenedor.Location = new System.Drawing.Point(0, 139);
-            this.contenedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.contenedor.Margin = new System.Windows.Forms.Padding(2);
             this.contenedor.Name = "contenedor";
             this.contenedor.Size = new System.Drawing.Size(1064, 572);
             this.contenedor.TabIndex = 3;
@@ -214,10 +214,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menu);
             this.Controls.Add(this.menutitulo);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Inicio_Load);
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
             this.ResumeLayout(false);
