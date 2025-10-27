@@ -24,9 +24,12 @@ namespace CapaPresentacion
 
 
 
-        public Inicio(Usuario objusuario)
-        {           
-            usuarioActual = objusuario;
+        public Inicio(Usuario objusuario = null)
+        {
+            if (objusuario == null) 
+                usuarioActual = new Usuario() { NombreCompleto = "ADMIN PREDEFINIDO", IdUsuario = 1 };
+            else
+                usuarioActual = objusuario;
 
             InitializeComponent();
         }
@@ -64,7 +67,7 @@ namespace CapaPresentacion
                 MenuActivo.BackColor = Color.White;
             }
 
-            menu.BackColor = Color.SteelBlue;
+            menu.BackColor = Color.Gray;
             MenuActivo = menu;
 
             if (FormularioActivo != null)
