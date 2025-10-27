@@ -47,7 +47,7 @@ namespace CapaPresentacion
             }
             else
             {
-                MessageBox.Show("Usuario o clave incorrecta", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Usuario o clave incorrecta ", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
 
