@@ -333,7 +333,7 @@
             // 
             // Estado
             // 
-            this.Estado.HeaderText = "Esrado";
+            this.Estado.HeaderText = "Estado";
             this.Estado.Name = "Estado";
             this.Estado.ReadOnly = true;
             // 
