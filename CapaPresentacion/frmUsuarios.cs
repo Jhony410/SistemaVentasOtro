@@ -201,7 +201,6 @@ namespace CapaPresentacion
                 }
             }
 
-
         }
 
         private void btneliminar_Click(object sender, EventArgs e)
@@ -255,6 +254,11 @@ namespace CapaPresentacion
             {
                 row.Visible = true;
             }
+        }
+
+        private void btnlimpiar_Click(object sender, EventArgs e)
+        {
+            Limpiar();
         }
     }
 }
