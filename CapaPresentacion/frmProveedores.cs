@@ -40,7 +40,6 @@ namespace CapaPresentacion
             cbobusqueda.SelectedIndex = 0;
 
 
-            // Mostrar todos los usuarios
             List<Proveedor> lista = new CN_Proveedor().Listar();
             foreach (Proveedor item in lista)
             {
