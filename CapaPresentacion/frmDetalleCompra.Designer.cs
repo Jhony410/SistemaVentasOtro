@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.btnlimpiarbuscador = new FontAwesome.Sharp.IconButton();
+            this.btnborrar = new FontAwesome.Sharp.IconButton();
             this.btnbuscar = new FontAwesome.Sharp.IconButton();
             this.txtbusqueda = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -56,7 +56,7 @@
             this.SubTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label12 = new System.Windows.Forms.Label();
             this.txtmontototal = new System.Windows.Forms.TextBox();
-            this.btnexportar = new FontAwesome.Sharp.IconButton();
+            this.btndescargar = new FontAwesome.Sharp.IconButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
@@ -85,22 +85,23 @@
             this.label10.TabIndex = 23;
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // btnlimpiarbuscador
+            // btnborrar
             // 
-            this.btnlimpiarbuscador.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.btnlimpiarbuscador.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnlimpiarbuscador.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnlimpiarbuscador.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnlimpiarbuscador.ForeColor = System.Drawing.Color.Black;
-            this.btnlimpiarbuscador.IconChar = FontAwesome.Sharp.IconChar.Eraser;
-            this.btnlimpiarbuscador.IconColor = System.Drawing.Color.Black;
-            this.btnlimpiarbuscador.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnlimpiarbuscador.IconSize = 18;
-            this.btnlimpiarbuscador.Location = new System.Drawing.Point(884, 35);
-            this.btnlimpiarbuscador.Name = "btnlimpiarbuscador";
-            this.btnlimpiarbuscador.Size = new System.Drawing.Size(42, 22);
-            this.btnlimpiarbuscador.TabIndex = 30;
-            this.btnlimpiarbuscador.UseVisualStyleBackColor = false;
+            this.btnborrar.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnborrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnborrar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnborrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnborrar.ForeColor = System.Drawing.Color.Black;
+            this.btnborrar.IconChar = FontAwesome.Sharp.IconChar.Eraser;
+            this.btnborrar.IconColor = System.Drawing.Color.Black;
+            this.btnborrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnborrar.IconSize = 18;
+            this.btnborrar.Location = new System.Drawing.Point(884, 35);
+            this.btnborrar.Name = "btnborrar";
+            this.btnborrar.Size = new System.Drawing.Size(42, 22);
+            this.btnborrar.TabIndex = 30;
+            this.btnborrar.UseVisualStyleBackColor = false;
+            this.btnborrar.Click += new System.EventHandler(this.btnborrar_Click);
             // 
             // btnbuscar
             // 
@@ -118,6 +119,7 @@
             this.btnbuscar.Size = new System.Drawing.Size(42, 22);
             this.btnbuscar.TabIndex = 29;
             this.btnbuscar.UseVisualStyleBackColor = false;
+            this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
             // 
             // txtbusqueda
             // 
@@ -229,6 +231,7 @@
             this.txtnumerodocumento.Name = "txtnumerodocumento";
             this.txtnumerodocumento.Size = new System.Drawing.Size(53, 20);
             this.txtnumerodocumento.TabIndex = 16;
+            this.txtnumerodocumento.Visible = false;
             // 
             // txtnombreproveedor
             // 
@@ -270,15 +273,15 @@
             // 
             this.dgvdata.AllowUserToAddRows = false;
             this.dgvdata.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvdata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvdata.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Producto,
@@ -289,9 +292,9 @@
             this.dgvdata.MultiSelect = false;
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.ReadOnly = true;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvdata.RowTemplate.Height = 28;
             this.dgvdata.Size = new System.Drawing.Size(598, 247);
             this.dgvdata.TabIndex = 34;
@@ -340,37 +343,38 @@
             this.txtmontototal.TabIndex = 36;
             this.txtmontototal.Text = "0";
             // 
-            // btnexportar
+            // btndescargar
             // 
-            this.btnexportar.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.btnexportar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnexportar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnexportar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnexportar.ForeColor = System.Drawing.Color.Black;
-            this.btnexportar.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
-            this.btnexportar.IconColor = System.Drawing.Color.Crimson;
-            this.btnexportar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnexportar.IconSize = 18;
-            this.btnexportar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnexportar.Location = new System.Drawing.Point(750, 503);
-            this.btnexportar.Name = "btnexportar";
-            this.btnexportar.Size = new System.Drawing.Size(156, 22);
-            this.btnexportar.TabIndex = 57;
-            this.btnexportar.Text = "Descargar en PDF";
-            this.btnexportar.UseVisualStyleBackColor = false;
+            this.btndescargar.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btndescargar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btndescargar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btndescargar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndescargar.ForeColor = System.Drawing.Color.Black;
+            this.btndescargar.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
+            this.btndescargar.IconColor = System.Drawing.Color.Crimson;
+            this.btndescargar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btndescargar.IconSize = 18;
+            this.btndescargar.Location = new System.Drawing.Point(750, 503);
+            this.btndescargar.Name = "btndescargar";
+            this.btndescargar.Size = new System.Drawing.Size(156, 31);
+            this.btndescargar.TabIndex = 57;
+            this.btndescargar.Text = "Descargar en PDF";
+            this.btndescargar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btndescargar.UseVisualStyleBackColor = false;
+            this.btndescargar.Click += new System.EventHandler(this.btndescargar_Click);
             // 
             // frmDetalleCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1251, 625);
-            this.Controls.Add(this.btnexportar);
+            this.Controls.Add(this.btndescargar);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.txtmontototal);
             this.Controls.Add(this.dgvdata);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btnlimpiarbuscador);
+            this.Controls.Add(this.btnborrar);
             this.Controls.Add(this.btnbuscar);
             this.Controls.Add(this.txtbusqueda);
             this.Controls.Add(this.label11);
@@ -378,6 +382,7 @@
             this.Controls.Add(this.label10);
             this.Name = "frmDetalleCompra";
             this.Text = "frmDetalleCompra";
+            this.Load += new System.EventHandler(this.frmDetalleCompra_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -392,7 +397,7 @@
 
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private FontAwesome.Sharp.IconButton btnlimpiarbuscador;
+        private FontAwesome.Sharp.IconButton btnborrar;
         private FontAwesome.Sharp.IconButton btnbuscar;
         private System.Windows.Forms.TextBox txtbusqueda;
         private System.Windows.Forms.Label label11;
@@ -416,6 +421,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SubTotal;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtmontototal;
-        private FontAwesome.Sharp.IconButton btnexportar;
+        private FontAwesome.Sharp.IconButton btndescargar;
     }
 }
