@@ -117,6 +117,7 @@
             this.btnagregarproducto.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnagregarproducto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnagregarproducto.UseVisualStyleBackColor = false;
+            this.btnagregarproducto.Click += new System.EventHandler(this.btnagregarproducto_Click);
             // 
             // btnregistrar
             // 
@@ -169,6 +170,8 @@
             this.dgvdata.RowTemplate.Height = 28;
             this.dgvdata.Size = new System.Drawing.Size(652, 273);
             this.dgvdata.TabIndex = 42;
+            this.dgvdata.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdata_CellContentClick);
+            this.dgvdata.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvdata_CellPainting);
             // 
             // IdProducto
             // 
@@ -471,6 +474,7 @@
             this.btnbuscarproducto.Size = new System.Drawing.Size(42, 20);
             this.btnbuscarproducto.TabIndex = 26;
             this.btnbuscarproducto.UseVisualStyleBackColor = false;
+            this.btnbuscarproducto.Click += new System.EventHandler(this.btnbuscarproducto_Click);
             // 
             // label3
             // 
@@ -488,6 +492,7 @@
             this.txtcodproducto.Name = "txtcodproducto";
             this.txtcodproducto.Size = new System.Drawing.Size(140, 20);
             this.txtcodproducto.TabIndex = 12;
+            this.txtcodproducto.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtcodproducto_KeyDown);
             // 
             // label4
             // 
