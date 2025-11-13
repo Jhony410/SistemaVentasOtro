@@ -213,5 +213,95 @@ namespace CapaPresentacion
                 }
             }
         }
+
+        private void txtprecio_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                if (txtprecio.Text.Trim().Length == 0 && e.KeyChar.ToString() == ".")
+                {
+                    e.Handled = true;
+                }
+                else
+                {
+                    if (Char.IsControl(e.KeyChar) || e.KeyChar.ToString() == ".")
+                    {
+                        e.Handled = false;
+                    }
+                    else
+                    {
+                        e.Handled = true;
+                    }
+                }
+            }
+        }
+
+        private void txtpagacon_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                if (txtpagacon.Text.Trim().Length == 0 && e.KeyChar.ToString() == ".")
+                {
+                    e.Handled = true;
+                }
+                else
+                {
+                    if (Char.IsControl(e.KeyChar) || e.KeyChar.ToString() == ".")
+                    {
+                        e.Handled = false;
+                    }
+                    else
+                    {
+                        e.Handled = true;
+                    }
+                }
+            }
+        }
+
+        private void calcularcambio()
+        {
+            if (txttotalpagar.Text.Trim() == "")
+            {
+                MessageBox.Show("Debe agregar productos a la venta", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
+            decimal pagacon;
+            decimal total = Convert.ToDecimal(txttotalpagar.Text);
+
+            if(txtpagacon.Text.Trim() == "")
+            {
+                txtpagacon.Text = "0";
+            }
+
+            if(decimal.TryParse(txtpagacon.Text.Trim(), out pagacon))
+            {
+                if(pagacon < total)
+                {
+                    txtcambio.Text = "0.00";
+                }
+                else
+                {
+                    decimal cambio = pagacon - total;
+                    txtcambio.Text = cambio.ToString("0.00");
+                }
+            }
+        }
+
+        private void txtpagacon_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyData == Keys.Enter)
+            {
+                calcularcambio();
+            }
+        }
     }
 }
