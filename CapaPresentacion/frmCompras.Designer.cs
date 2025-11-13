@@ -81,7 +81,7 @@
             this.label10.BackColor = System.Drawing.Color.White;
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(151, 33);
+            this.label10.Location = new System.Drawing.Point(201, 28);
             this.label10.Name = "label10";
             this.label10.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.label10.Size = new System.Drawing.Size(880, 529);
@@ -93,7 +93,7 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.White;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(159, 52);
+            this.label9.Location = new System.Drawing.Point(209, 47);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(203, 29);
             this.label9.TabIndex = 22;
@@ -106,7 +106,7 @@
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.txtfecha);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Location = new System.Drawing.Point(178, 93);
+            this.groupBox1.Location = new System.Drawing.Point(228, 88);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(334, 79);
             this.groupBox1.TabIndex = 23;
@@ -188,7 +188,7 @@
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.txtdocproveedor);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Location = new System.Drawing.Point(534, 93);
+            this.groupBox2.Location = new System.Drawing.Point(584, 88);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(446, 79);
             this.groupBox2.TabIndex = 24;
@@ -244,7 +244,7 @@
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.txtcodproducto);
             this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Location = new System.Drawing.Point(178, 178);
+            this.groupBox3.Location = new System.Drawing.Point(228, 173);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(748, 79);
             this.groupBox3.TabIndex = 29;
@@ -403,7 +403,7 @@
             this.Cantidad,
             this.SubTotal,
             this.btneliminar});
-            this.dgvdata.Location = new System.Drawing.Point(208, 263);
+            this.dgvdata.Location = new System.Drawing.Point(258, 258);
             this.dgvdata.MultiSelect = false;
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.ReadOnly = true;
@@ -466,7 +466,7 @@
             // 
             // txttotalpagar
             // 
-            this.txttotalpagar.Location = new System.Drawing.Point(858, 463);
+            this.txttotalpagar.Location = new System.Drawing.Point(908, 458);
             this.txttotalpagar.Name = "txttotalpagar";
             this.txttotalpagar.Size = new System.Drawing.Size(100, 20);
             this.txttotalpagar.TabIndex = 32;
@@ -476,7 +476,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(855, 445);
+            this.label12.Location = new System.Drawing.Point(905, 440);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(74, 13);
             this.label12.TabIndex = 35;
@@ -494,7 +494,7 @@
             this.btnregistrar.IconColor = System.Drawing.Color.White;
             this.btnregistrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnregistrar.IconSize = 30;
-            this.btnregistrar.Location = new System.Drawing.Point(858, 489);
+            this.btnregistrar.Location = new System.Drawing.Point(908, 484);
             this.btnregistrar.Name = "btnregistrar";
             this.btnregistrar.Size = new System.Drawing.Size(116, 47);
             this.btnregistrar.TabIndex = 36;
@@ -515,7 +515,7 @@
             this.btnagregarproducto.IconColor = System.Drawing.Color.White;
             this.btnagregarproducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnagregarproducto.IconSize = 30;
-            this.btnagregarproducto.Location = new System.Drawing.Point(932, 178);
+            this.btnagregarproducto.Location = new System.Drawing.Point(982, 173);
             this.btnagregarproducto.Name = "btnagregarproducto";
             this.btnagregarproducto.Size = new System.Drawing.Size(85, 85);
             this.btnagregarproducto.TabIndex = 31;
