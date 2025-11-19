@@ -92,7 +92,7 @@ namespace CapaDatos
 
                     SqlCommand cmd = new SqlCommand(query.ToString(), oconexion);
                     cmd.Parameters.AddWithValue("@numero", numero);
-                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandType = System.Data.CommandType.Text;
 
                     oconexion.Open();
 
