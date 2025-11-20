@@ -25,7 +25,7 @@ namespace CapaPresentacion
 
         private void frmDetalleCompra_Load(object sender, EventArgs e)
         {
-
+            txtbusqueda.Select();
         }
 
         private void btnbuscar_Click(object sender, EventArgs e)

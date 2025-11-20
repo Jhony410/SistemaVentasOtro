@@ -139,7 +139,7 @@ namespace CapaDatos
 
                     query.AppendLine("SELECT v.IdVenta, u.NombreCompleto,");
                     query.AppendLine("v.NombreCliente, v.TipoDocumento, v.NumeroDocumento,");
-                    query.AppendLine("v.MontoCambio, v.MontoCambio, v.MontoTotal,");
+                    query.AppendLine("v.MontoPago, v.MontoCambio, v.MontoTotal,");
                     query.AppendLine("convert(char(10),v.FechaRegistro,103)[FechaRegistro]");
                     query.AppendLine("FROM VENTA v");
                     query.AppendLine("inner join USUARIO u on u.IdUsuario = v.IdUsuario");
@@ -161,7 +161,7 @@ namespace CapaDatos
                                 NombreCliente = dr["NombreCliente"].ToString(),
                                 TipoDocumento = dr["TipoDocumento"].ToString(),
                                 NumeroDocumento = dr["NumeroDocumento"].ToString(),
-                                MontoPago = Convert.ToDecimal( dr["MontoCambio"].ToString()),
+                                MontoPago = Convert.ToDecimal( dr["MontoPago"].ToString()),
                                 MontoCambio = Convert.ToDecimal(dr["MontoCambio"].ToString()),
                                 MontoTotal = Convert.ToDecimal(dr["MontoTotal"].ToString()),
                                 FechaRegistro = dr["FechaRegistro"].ToString()
