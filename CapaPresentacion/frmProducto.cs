@@ -319,8 +319,22 @@ namespace CapaPresentacion
                         MessageBox.Show("No se pudo generar el reporte", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }
                 }
-
             }
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbobusqueda_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtbusqueda_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
