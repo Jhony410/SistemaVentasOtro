@@ -72,7 +72,7 @@
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 150;
             this.iconPictureBox1.Location = new System.Drawing.Point(67, 33);
-            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(150, 162);
             this.iconPictureBox1.TabIndex = 2;
@@ -81,8 +81,8 @@
             // 
             // txtdocumento
             // 
-            this.txtdocumento.Location = new System.Drawing.Point(340, 49);
-            this.txtdocumento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtdocumento.Location = new System.Drawing.Point(340, 64);
+            this.txtdocumento.Margin = new System.Windows.Forms.Padding(2);
             this.txtdocumento.Name = "txtdocumento";
             this.txtdocumento.Size = new System.Drawing.Size(252, 20);
             this.txtdocumento.TabIndex = 3;
@@ -90,8 +90,8 @@
             // 
             // txtclave
             // 
-            this.txtclave.Location = new System.Drawing.Point(340, 119);
-            this.txtclave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtclave.Location = new System.Drawing.Point(341, 113);
+            this.txtclave.Margin = new System.Windows.Forms.Padding(2);
             this.txtclave.Name = "txtclave";
             this.txtclave.PasswordChar = '*';
             this.txtclave.Size = new System.Drawing.Size(252, 20);
@@ -101,7 +101,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(338, 33);
+            this.label3.Location = new System.Drawing.Point(338, 48);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 13);
@@ -111,7 +111,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(338, 103);
+            this.label4.Location = new System.Drawing.Point(339, 97);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 13);
@@ -131,8 +131,8 @@
             this.btningresarr.IconColor = System.Drawing.Color.White;
             this.btningresarr.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btningresarr.IconSize = 21;
-            this.btningresarr.Location = new System.Drawing.Point(335, 180);
-            this.btningresarr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btningresarr.Location = new System.Drawing.Point(336, 159);
+            this.btningresarr.Margin = new System.Windows.Forms.Padding(2);
             this.btningresarr.Name = "btningresarr";
             this.btningresarr.Size = new System.Drawing.Size(123, 43);
             this.btningresarr.TabIndex = 7;
@@ -154,8 +154,8 @@
             this.btncancelar.IconColor = System.Drawing.Color.White;
             this.btncancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btncancelar.IconSize = 21;
-            this.btncancelar.Location = new System.Drawing.Point(467, 180);
-            this.btncancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btncancelar.Location = new System.Drawing.Point(468, 159);
+            this.btncancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btncancelar.Name = "btncancelar";
             this.btncancelar.Size = new System.Drawing.Size(123, 43);
             this.btncancelar.TabIndex = 8;
@@ -181,7 +181,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
