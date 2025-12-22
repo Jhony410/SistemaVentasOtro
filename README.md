@@ -1,4 +1,4 @@
-# 🛒 Sistema de Gestión de Ventas Pro
+# 🛒 Sistema de Ordenes de trabajo
 
 ![.NET](https://img.shields.io/badge/.NET%20Framework-4.7.2-blueviolet)
 ![SQL Server](https://img.shields.io/badge/SQL%20Server-2019%2B-red)
@@ -6,7 +6,7 @@
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
 ## 📋 Descripción General
-Este es un robusto **Sistema de Gestión de Ventas** desarrollado bajo una arquitectura empresarial de N-Capas utilizando C# y WinForms. El sistema resuelve la necesidad de centralizar el control de inventarios, compras, ventas y reportes en entornos de pequeñas y medianas empresas, ofreciendo una interfaz intuitiva con funcionalidades avanzadas como exportación a Excel e impresión de recibos en PDF.
+Este es un robusto **Sistema de Ordenes de trabajo** desarrollado bajo una arquitectura empresarial de N-Capas utilizando C# y WinForms. El sistema resuelve la necesidad de centralizar el control de inventarios, compras, ventas y reportes en entornos de pequeñas y medianas empresas, ofreciendo una interfaz intuitiva con funcionalidades avanzadas como exportación a Excel e impresión de recibos en PDF.
 
 ---
 
